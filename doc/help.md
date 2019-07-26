@@ -55,6 +55,9 @@ wangchao@wangchao-PC:~/go/src/amdop/src$ ./src
 ```
 
 
+beego 编译产物部署时必须要在同目录下有`conf/app.conf`与`static/*`与`views/*`这三样
+
+
 在 beego admin 的 RBAC 中
 node 是每个可以操作的接口资源，比如`UpdateUser`这个node表示更新用户操作
 group 是对 node 的分组，node 与 group 是多对多关系
