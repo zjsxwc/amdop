@@ -65,3 +65,6 @@ user 就是普通用户
 role 是指 user 与 node 的对应关系，user 与 node 是多对多关系，group 只是为了方便 role 分配 node 而出现的
 
 
+在 beego admin 的 RBAC 中，
+RBAC 默认的三层 node 节点“爷父子”的 name 用斜杠分割后就组合成了 http 请求地址，
+权限也是靠这种方式处理来鉴定的
