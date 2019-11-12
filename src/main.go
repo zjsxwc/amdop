@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "amdop/src/models"
-	_ "amdop/src/routers"
+	_ "./models"
+	_ "./routers"
 	"github.com/astaxie/beego"
 )
 
