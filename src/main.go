@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "amdop/src/models"
 	_ "amdop/src/routers"
 	"github.com/astaxie/beego"
 )
@@ -8,4 +9,6 @@ import (
 func main() {
 	beego.Run()
 }
+
+
 
