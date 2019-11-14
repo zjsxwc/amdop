@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"fmt"
+	"github.com/liudng/godump"
 	"github.com/astaxie/beego"
 )
 
@@ -27,6 +28,14 @@ func (c *MainController) Get() {
 
 	c.SetSession("xxccc", "teststring")
 	fmt.Println(c.GetSession("xxccc"))
+
+
+
+
+	c.SetSession("xxccc1", 122)
+	fmt.Println(c.GetSession("xxccc1"))
+	godump.Dump(c.GetSession("xxccc1"))
+	godump.Dump(c.GetSession("userinfo"))
 }
 
 
