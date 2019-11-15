@@ -1,4 +1,4 @@
-使用beego admin
+#### 使用beego admin
 
 
 cd ~/amdop/amdop
@@ -11,7 +11,7 @@ GO111MODULE=on go build
 
 
 
-如何把go三方包拿到本地改，先复制的localpkg目录下，然后进入三方包，
+#### 如何把go三方包拿到本地改，先复制的localpkg目录下，然后进入三方包，
 
 执行 `GO111MODULE=on go mod init github.com/beego/admin`
 
@@ -23,3 +23,5 @@ GO111MODULE=on go build
 
 执行 `GO111MODULE=on GOPROXY=https://goproxy.io  go mod tidy`与
 `GO111MODULE=on go build`
+
+#### TODO 使用 AdminModel自动对Model CRUD
