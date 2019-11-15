@@ -152,7 +152,7 @@ func CheckLogin(username string, password string) (user m.User, err error) {
 	if user.Id == 0 {
 		return user, errors.New("用户不存在")
 	}
-	if user.Password != Pwdhash(password) {
+	if !CheckPwdAndHashRight(password, user.Password) {
 		return user, errors.New("密码错误")
 	}
 	return user, nil

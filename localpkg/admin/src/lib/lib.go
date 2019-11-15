@@ -3,6 +3,8 @@ package lib
 import (
 	"crypto/md5"
 	"encoding/hex"
+	"fmt"
+	"golang.org/x/crypto/bcrypt"
 	"strconv"
 )
 
@@ -16,7 +18,20 @@ func Strtomd5(s string) string {
 
 //password hash function
 func Pwdhash(str string) string {
-	return Strtomd5(str)
+	hash, err := bcrypt.GenerateFromPassword([]byte(str), bcrypt.DefaultCost)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	return string(hash)
+}
+
+func CheckPwdAndHashRight(rawPassword, passwordHash string) bool  {
+	err := bcrypt.CompareHashAndPassword([]byte(passwordHash), []byte(rawPassword))
+	if err != nil {
+		return false
+	}
+	return true
 }
 
 func StringsToJson(str string) string {
