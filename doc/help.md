@@ -39,6 +39,8 @@ wangchao@wangchao-PC:~/go/src/amdop/src$ go build
 ```sql
 CREATE DATABASE IF NOT EXISTS amdop DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+虽然直接也会创建数据库 但默认数据库字符集不是mb字符集
+
 ```bash
 wangchao@wangchao-PC:~/go/src/amdop/src$ pwd
 /home/wangchao/go/src/amdop/src
