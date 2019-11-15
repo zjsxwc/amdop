@@ -176,3 +176,20 @@ if bytes.HasPrefix(line, sectionStart) && bytes.HasSuffix(line, sectionEnd) {
 ```
 
 
+7.如何数据迁移
+
+创建数据迁移代码
+ 1141  bee generate migration user
+修改新创建的`database/migrations/20191115_151429_user.go` 写sql 
+ 1145  bee help migrate 
+执行所有迁移 
+ 1146  bee migrate -conn="root:root@tcp(192.168.33.77:3306)/amdop"
+回滚所有迁移
+ 1147  bee migrate reset -conn="root:root@tcp(192.168.33.77:3306)/amdop"
+回滚一次最近的迁移
+ 1147  bee migrate rollback -conn="root:root@tcp(192.168.33.77:3306)/amdop"
+全部撤销迁移后重新执行一次迁移
+ 1147  bee migrate refresh -conn="root:root@tcp(192.168.33.77:3306)/amdop"
+
+
+
