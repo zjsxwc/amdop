@@ -70,3 +70,109 @@ role 是指 user 与 node 的对应关系，user 与 node 是多对多关系，g
 在 beego admin 的 RBAC 中，
 RBAC 默认的三层 node 节点“爷父子”的 name 用斜杠分割后就组合成了 http 请求地址，
 权限也是靠这种方式处理来鉴定的
+
+6. beego如何通过反射读取配置
+
+beego这里的配置就是 /home/wangchao/go/pkg/mod/github.com/astaxie/beego@v1.12.0/config.go 里结构体每个字段的名字=值
+
+读取配置文件具体实现看     /home/wangchao/go/pkg/mod/github.com/astaxie/beego@v1.12.0/config.go:280
+
+```
+for _, i := range []interface{}{BConfig, &BConfig.Listen, &BConfig.WebConfig, &BConfig.Log, &BConfig.WebConfig.Session} {
+   		assignSingleConfig(i, ac)
+   	}
+
+
+func assignSingleConfig(p interface{}, ac config.Configer) {
+	pt := reflect.TypeOf(p)
+	if pt.Kind() != reflect.Ptr {
+		return
+	}
+	pt = pt.Elem()
+	if pt.Kind() != reflect.Struct {
+		return
+	}
+	pv := reflect.ValueOf(p).Elem()
+
+	for i := 0; i < pt.NumField(); i++ {
+		pf := pv.Field(i)
+		if !pf.CanSet() {
+			continue
+		}
+		name := pt.Field(i).Name
+		switch pf.Kind() {
+		case reflect.String:
+			pf.SetString(ac.DefaultString(name, pf.String()))
+		case reflect.Int, reflect.Int64:
+			pf.SetInt(ac.DefaultInt64(name, pf.Int()))
+		case reflect.Bool:
+			pf.SetBool(ac.DefaultBool(name, pf.Bool()))
+		case reflect.Struct:
+		default:
+			//do nothing here
+		}
+	}
+
+}
+
+
+// DefaultString returns the string value for a given key.
+// if err != nil return defaultval
+func (c *IniConfigContainer) DefaultString(key string, defaultval string) string {
+	v := c.String(key)
+	if v == "" {
+		return defaultval
+	}
+	return v
+}
+
+// String returns the string value for a given key.
+func (c *IniConfigContainer) String(key string) string {
+	return c.getdata(key)
+}
+
+
+
+// section.key or key
+func (c *IniConfigContainer) getdata(key string) string {
+	if len(key) == 0 {
+		return ""
+	}
+	c.RLock()
+	defer c.RUnlock()
+
+	var (
+		section, k string
+		sectionKey = strings.Split(strings.ToLower(key), "::") //《------------- struct的字段名变小写了
+	)
+	if len(sectionKey) >= 2 {
+		section = sectionKey[0]
+		k = sectionKey[1]
+	} else {
+		section = defaultSection
+		k = sectionKey[0]
+	}
+	if v, ok := c.data[section]; ok {
+		if vv, ok := v[k]; ok {
+			return vv
+		}
+	}
+	return ""
+}
+
+在解析ini  conf文件时都 不区分大小写，section全变成小写先
+if bytes.HasPrefix(line, sectionStart) && bytes.HasSuffix(line, sectionEnd) {
+			section = strings.ToLower(string(line[1 : len(line)-1])) // section name case insensitive
+			if comment.Len() > 0 {
+				cfg.sectionComment[section] = comment.String()
+				comment.Reset()
+			}
+			if _, ok := cfg.data[section]; !ok {
+				cfg.data[section] = make(map[string]string)
+			}
+			continue
+		}
+
+```
+
+
