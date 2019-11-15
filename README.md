@@ -11,7 +11,7 @@ GO111MODULE=on go build
 
 
 
-如何把三方包拿到本地改，先复制的localpkg目录下，然后进入三方包，
+如何把go三方包拿到本地改，先复制的localpkg目录下，然后进入三方包，
 
 执行 `GO111MODULE=on go mod init github.com/beego/admin`
 
