@@ -21,7 +21,7 @@ var URL="/public"
     });
 function fromsubmit(){
     $("#form").form('submit',{
-        url:URL+'/login?isajax=1',
+        url:URL+'/login',
         onSubmit:function(){
             return $("#form").form('validate');
         },

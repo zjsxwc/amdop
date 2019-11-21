@@ -50,8 +50,8 @@ func (this *MainController) Index() {
 
 //登录
 func (this *MainController) Login() {
-	isajax := this.GetString("isajax")
-	if isajax == "1" {
+	isPost := this.Ctx.Request.Method == "POST"
+	if isPost {
 		username := this.GetString("username")
 		password := this.GetString("password")
 		user, err := CheckLogin(username, password)
