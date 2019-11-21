@@ -22,8 +22,13 @@ func AccessRegister() {
 			params := strings.Split(strings.ToLower(strings.Split(ctx.Request.RequestURI, "?")[0]), "/")
 			if CheckAccess(params) {
 				uinfo := ctx.Input.Session("userinfo")
+				isAjax := ctx.Input.IsAjax()
 				if uinfo == nil {
-					ctx.Redirect(302, rbac_auth_gateway)
+					if isAjax {
+						ctx.Output.JSON(&map[string]interface{}{"status": false, "info": "请先登录", "code": "NOT_LOGIN"}, true, false)
+					} else {
+						ctx.Redirect(302, rbac_auth_gateway)
+					}
                     return
 				}
 				//admin用户不用认证权限
@@ -44,7 +49,7 @@ func AccessRegister() {
 
 				ret := AccessDecision(params, accesslist)
 				if !ret {
-					ctx.Output.JSON(&map[string]interface{}{"status": false, "info": "权限不足"}, true, false)
+					ctx.Output.JSON(&map[string]interface{}{"status": false, "info": "权限不足", "code": "NO_AUTH"}, true, false)
 				}
 			}
 
