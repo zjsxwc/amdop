@@ -34,7 +34,7 @@ $(function(){
             },
             {field:'Createtime',title:'添加时间',width:100,align:'center',
                 formatter:function(value,row,index){
-                    if(value) return phpjs.date("Y-m-d H:i:s",phpjs.strtotime(value));
+                    if(value) return phpjs.date("Y-m-d H:i:s T",phpjs.strtotime(value));
                     return value;
                 }
             },
