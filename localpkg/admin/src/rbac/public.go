@@ -109,3 +109,26 @@ func (this *MainController) Changepwd() {
 	this.Rsp(false, "密码有误")
 
 }
+
+//获取权限
+func (this *MainController) GetAccessList() {
+	uinfo := this.Ctx.Input.Session("userinfo")
+	if uinfo == nil {
+		this.Data["json"] = &map[string]interface{}{"status": false, "info": "请先登录", "code": "NOT_LOGIN"}
+		this.ServeJSON()
+		return
+	}
+	//admin用户
+	adminuser := beego.AppConfig.String("rbac_admin_user")
+	if uinfo.(m.User).Username == adminuser {
+		this.Data["json"] = &map[string]interface{}{"status": true, "info": "管理员拥有所有权限", "code": "IS_ADMIN"}
+		this.ServeJSON()
+		return
+	}
+
+	accesslist, _ := GetAccessList(uinfo.(m.User).Id)
+	this.Data["json"] = &map[string]interface{}{"status": true, "info": "该员工目前所有权限", "code": "IS_STAFF", "access_list": accesslist}
+	this.ServeJSON()
+
+}
+
