@@ -196,5 +196,5 @@ if bytes.HasPrefix(line, sectionStart) && bytes.HasSuffix(line, sectionEnd) {
 8. 加接口获取当前员工权限
 
 GET  /public/getaccesslist 
-
+code IS_ADMIN IS_STAFF
 去掉第一个/ 以及全小写后比较map里是否有这个key
