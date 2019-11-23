@@ -1,50 +1,46 @@
 package controllers
 
 import (
-	"fmt"
-	"github.com/liudng/godump"
+	"errors"
 	"github.com/astaxie/beego"
+	"github.com/syyongx/php2go"
 )
 
 type MainController struct {
 	beego.Controller
 }
 
-type Xx struct {
-	Vv int64
+func (c *MainController) Admin() {
+	entry, err := c.getSPAConfig("admin_entry")
+	if err == nil {
+		c.Ctx.Redirect(302, entry)
+		return
+	}
+	c.Data["json"] = &map[string]interface{}{"status": false, "info": "未配置单页", "code": err.Error()}
+	c.ServeJSON()
 }
 
-func x(px interface{})  {
-	fmt.Println(px)
+func (c *MainController) Front() {
+	entry, err := c.getSPAConfig("front_entry")
+	if err == nil {
+		c.Ctx.Redirect(302, entry)
+		return
+	}
+	c.Data["json"] = &map[string]interface{}{"status": false, "info": "未配置单页", "code": err.Error()}
+	c.ServeJSON()
 }
 
-
-func (c *MainController) Get() {
-	c.Data["Website"] = "GetGetGetGet"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
-
-	//x(new(Xx))
-
-	c.SetSession("xxccc", "teststring")
-	fmt.Println(c.GetSession("xxccc"))
-
-
-
-
-	c.SetSession("xxccc1", 122)
-	fmt.Println(c.GetSession("xxccc1"))
-	godump.Dump(c.GetSession("xxccc1"))
-	godump.Dump(c.GetSession("userinfo"))
-}
-
-
-func (c *MainController) Foo() {
-	c.Data["Website"] = "FooFooFooFoo"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
-
-	x(new(Xx))
-
-
+func (c *MainController) getSPAConfig(key string) (string, error) {
+	json, err := php2go.FileGetContents("static/spa/config.json")
+	if err == nil {
+		configMap := make(map[string]string)
+		err := php2go.JSONDecode([]byte(json), &configMap)
+		if err == nil {
+			value, ok := configMap[key]
+			if ok {
+				return value, nil
+			}
+		}
+	}
+	return "", errors.New("NO_SPA_CONFIG")
 }
