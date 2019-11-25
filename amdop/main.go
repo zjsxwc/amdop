@@ -14,7 +14,7 @@ func main() {
 }
 
 func init()  {
-	os.Setenv("TZ", "Asia/Shanghai")
+	os.Setenv("TZ", "UTC")
 	//基础类型 int、string等默认已经注册了的，不需要为session注册，需要注册特定类型，在文件`sess_utils.go`里init注册了的也不用再注册
 	gob.Register(models.User{})
 	gob.Register(map[string]bool{})
