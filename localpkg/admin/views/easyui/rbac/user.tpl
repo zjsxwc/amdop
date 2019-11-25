@@ -34,11 +34,11 @@ $(function(){
             },
             {field:'Createtime',title:'添加时间',width:100,align:'center',
                 formatter:function(value,row,index){
-                    // value是UTC时区的时间格式"Y-m-d H:i:s"
+                    // value是UTC时区的时间格式"2019-11-23T03:43:27+08:00"
                     if(value) {
-                        var utcDate = new Date(value + ".000Z"); //2019-11-25 10:34:00.000Z
-                        return utcDate.getFullYear() + "-" + utcDate.getMonth() + "-" + utcDate.getDate() + " " +
-                            utcDate.getHours() + ":" + utcDate.getMinutes() + ":" +utcDate.getSeconds();
+                        var vDate = new Date(value);
+                        return vDate.getFullYear() + "-" + vDate.getMonth() + "-" + vDate.getDate() + " " +
+                            vDate.getHours() + ":" + vDate.getMinutes() + ":" + vDate.getSeconds();
                     }
                     return value;
                 }

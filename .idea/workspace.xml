@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d5611cd2-6266-4488-b5c6-2835c7685459" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amdop/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/amdop/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amdop/views/easyui/rbac/user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/amdop/views/easyui/rbac/user.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,27 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/localpkg/admin/Router.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/help.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="3366">
-                <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/localpkg/admin/views/easyui/public/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,67 +27,94 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amdop/views/easyui/rbac/user.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="40" column="98" selection-start-line="40" selection-start-column="98" selection-end-line="40" selection-end-column="98" />
+            <state relative-caret-position="306">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/localpkg/admin/src/rbac/node.go">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="43" column="24" selection-start-line="42" selection-start-column="8" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="204">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amdop/controllers/default.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amdop/static/easyui/jquery-easyui/phpjs.js">
+        <entry file="file://$PROJECT_DIR$/localpkg/admin/src/rbac/user.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="113" column="10" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/syyongx/php2go@v0.9.4/php.go">
+        <entry file="file://$PROJECT_DIR$/localpkg/admin/admin.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/go/src/time/format.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13124">
-              <caret line="772" column="5" selection-start-line="772" selection-start-column="5" selection-end-line="772" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amdop/routers/router.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="544">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
-                <element signature="e#17#102#0" expanded="true" />
+                <element signature="e#15#148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amdop/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/localpkg/admin/src/models/UserModel.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+              <folding>
+                <element signature="e#16#187#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/models_info_f.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/db.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="240" column="34" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/orm.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+              <folding>
+                <element signature="e#1445#1532#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,9 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>StringsToJson</find>
-      <find>github.com/beego/admin</find>
-      <find>admin/src/lib</find>
       <find>user_auth_type</find>
       <find>not_auth_package</find>
       <find>EnableHTTPS</find>
@@ -146,7 +151,6 @@
       <find>dialog</find>
       <find>isajax</find>
       <find>local</find>
-      <find>Createtime</find>
       <find>date =</find>
       <find>format</find>
       <find>'Createtime',title:'添加时间',width:100,</find>
@@ -154,6 +158,10 @@
       <find>StaticDir</find>
       <find>Xx</find>
       <find>/changepwd</find>
+      <find>Createtime</find>
+      <find>auto_now_add</find>
+      <find>autoNowAdd</find>
+      <find>NowAdd</find>
     </findStrings>
     <replaceStrings>
       <replace>beegoadmin</replace>
@@ -203,7 +211,6 @@
         <option value="$PROJECT_DIR$/doc/coderead.md" />
         <option value="$PROJECT_DIR$/go.mod" />
         <option value="$PROJECT_DIR$/src/main.go" />
-        <option value="$PROJECT_DIR$/amdop/main.go" />
         <option value="$PROJECT_DIR$/main/go.mod" />
         <option value="$PROJECT_DIR$/localpkg/beegoadmin/admin.go" />
         <option value="$PROJECT_DIR$/localpkg/admin/admin.go" />
@@ -219,7 +226,6 @@
         <option value="$PROJECT_DIR$/localpkg/admin/views/easyui/public/login.tpl" />
         <option value="$PROJECT_DIR$/amdop/conf/app.conf" />
         <option value="$PROJECT_DIR$/localpkg/admin/src/rbac.go" />
-        <option value="$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl" />
         <option value="$PROJECT_DIR$/amdop/routers/router.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/amdop/static/spa/admin.html" />
@@ -229,6 +235,8 @@
         <option value="$PROJECT_DIR$/doc/help.md" />
         <option value="$PROJECT_DIR$/amdop/controllers/default.go" />
         <option value="$PROJECT_DIR$/amdop/views/easyui/rbac/user.tpl" />
+        <option value="$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl" />
+        <option value="$PROJECT_DIR$/amdop/main.go" />
       </list>
     </option>
   </component>
@@ -278,69 +286,6 @@
             <path>
               <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
               <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-easyui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="spa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="spa-example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amdop" type="462c0819:PsiDirectoryNode" />
               <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -367,6 +312,30 @@
               <item name="localpkg" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amdop" type="462c0819:PsiDirectoryNode" />
+              <item name="localpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amdop" type="462c0819:PsiDirectoryNode" />
+              <item name="localpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="easyui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amdop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amdop" type="462c0819:PsiDirectoryNode" />
+              <item name="localpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="easyui" type="462c0819:PsiDirectoryNode" />
               <item name="rbac" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,9 +394,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62332696" visible="true" weight="0.19210246" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62332696" visible="true" weight="0.19210246" />
       <window_info id="Structure" order="1" sideWeight="0.37667304" side_tool="true" visible="true" weight="0.19210246" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -440,7 +408,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39256677" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39256677" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -456,16 +424,6 @@
     <proxy>https://goproxy.io</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/amdop/models/CommentModel.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amdop/models/ArtileModel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/app.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -508,13 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/orm.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -602,47 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="62" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localpkg/admin/src/models/UserModel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#16#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localpkg/admin/admin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#15#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/beego.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amdop/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#14#142#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localpkg/admin/src/rbac/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -811,6 +718,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/amdop/static/easyui/jquery-easyui/phpjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localpkg/admin/src/models/UserModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#16#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/models_info_f.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/orm.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+          <folding>
+            <element signature="e#1445#1532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pkg/mod/github.com/astaxie/beego@v1.12.0/orm/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="240" column="34" selection-start-line="240" selection-start-column="24" selection-end-line="240" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/localpkg/admin/views/easyui/public/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1532">
@@ -821,17 +769,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amdop/static/easyui/jquery-easyui/phpjs.js">
+    <entry file="file://$PROJECT_DIR$/localpkg/admin/src/rbac/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="113" column="10" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localpkg/admin/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#15#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amdop/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#142#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amdop/views/easyui/rbac/user.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="40" column="98" selection-start-line="40" selection-start-column="98" selection-end-line="40" selection-end-column="98" />
+        <state relative-caret-position="306">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localpkg/admin/views/easyui/rbac/user.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
         </state>
       </provider>
     </entry>
