@@ -34,7 +34,12 @@ $(function(){
             },
             {field:'Createtime',title:'添加时间',width:100,align:'center',
                 formatter:function(value,row,index){
-                    if(value) return phpjs.date("Y-m-d H:i:s T",phpjs.strtotime(value));
+                    // value是UTC时区的时间格式"Y-m-d H:i:s"
+                    if(value) {
+                        var utcDate = new Date(value + ".000Z"); //2019-11-25 10:34:00.000Z
+                        return utcDate.getFullYear() + "-" + utcDate.getMonth() + "-" + utcDate.getDate() + " " +
+                            utcDate.getHours() + ":" + utcDate.getMinutes() + ":" +utcDate.getSeconds();
+                    }
                     return value;
                 }
             },
