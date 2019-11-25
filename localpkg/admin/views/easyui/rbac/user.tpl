@@ -34,7 +34,8 @@ $(function(){
             },
             {field:'Createtime',title:'添加时间',width:100,align:'center',
                 formatter:function(value,row,index){
-                    // value是UTC时区的时间格式"2019-11-23T03:43:27+08:00"
+                    // value是UTC时区的时间格式"2019-11-23T03:43:27+08:00" 北京时间
+                    // value是UTC时区的时间格式"2019-11-23T03:43:27Z" UTC时间 默认
                     if(value) {
                         var vDate = new Date(value);
                         return vDate.getFullYear() + "-" + vDate.getMonth() + "-" + vDate.getDate() + " " +
