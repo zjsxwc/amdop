@@ -198,3 +198,8 @@ if bytes.HasPrefix(line, sectionStart) && bytes.HasSuffix(line, sectionEnd) {
 GET  /public/getaccesslist 
 code IS_ADMIN IS_STAFF
 去掉第一个/ 以及全小写后比较map里是否有这个key
+
+9. 数据库时区使用UTC
+
+set global time_zone = 'UTC'
+flush privileges 
