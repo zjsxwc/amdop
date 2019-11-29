@@ -206,5 +206,4 @@ flush privileges
 
 
 ```
-curl  -i http://localhost:8080/onerequest -X POST -H "Amdopsid: a7f7d17e1e5d65f2170ff3082cb194f2" -d 'subRequestList=[{"api":"https://fyh88.com/user/login/status","method":"post"}, {"api":"https://fyh88.com/user/login","method":"post","params":"{\"_username\":\"CN_13758129341\",\"_password\":\"fyh123456x\"}"}]'
-```
+curl  -i http://localhost:8080/onerequest -X POST -H "Amdopsid: e4f68089408d0682a46d54813d08c9af" -d 'subRequestList=[{"api":"https://fyh88.com/user/login/status","method":"post"}, {"api":"https://fyh88.com/user/logxin","method":"post","params":"{\"_username\":\"CN_13758129341\",\"_password\":\"fyh123456x\"}"}]'```

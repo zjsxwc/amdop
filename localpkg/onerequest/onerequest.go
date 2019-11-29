@@ -22,6 +22,7 @@ type SubResponse struct {
 	Method   string                 `json:"method"`
 	Params   string                 `json:"params"`
 	Response map[string]interface{} `json:"response"`
+	Error    interface{}            `json:"error"`
 }
 
 func (c *MainController) processSubRequest(subRequest SubRequest) SubResponse {
@@ -36,7 +37,12 @@ func (c *MainController) processSubRequest(subRequest SubRequest) SubResponse {
 			var params map[string]string
 			err := json.Unmarshal([]byte(subRequest.Params), &params)
 			if err != nil {
-				return SubResponse{}
+				return SubResponse{
+					Api:    subRequest.Api,
+					Method: strings.ToLower(subRequest.Method),
+					Params: subRequest.Params,
+					Error:  "不能解析json参数",
+				}
 			}
 			for k, v := range params {
 				req.Param(k, v)
@@ -45,37 +51,51 @@ func (c *MainController) processSubRequest(subRequest SubRequest) SubResponse {
 	}
 	respStr, err := req.String()
 	if err != nil {
-		return SubResponse{}
+		return SubResponse{
+			Api:    subRequest.Api,
+			Method: strings.ToLower(subRequest.Method),
+			Params: subRequest.Params,
+			Error:  "不能获取接口返回",
+		}
 	}
 
 	var response map[string]interface{}
 	err = json.Unmarshal([]byte(respStr), &response)
 	if err != nil {
-		return SubResponse{}
+		return SubResponse{
+			Api:    subRequest.Api,
+			Method: strings.ToLower(subRequest.Method),
+			Params: subRequest.Params,
+			Error:  "解析接口返回不是json",
+		}
 	}
 	return SubResponse{
 		Api:      subRequest.Api,
 		Method:   strings.ToLower(subRequest.Method),
 		Params:   subRequest.Params,
 		Response: response,
+		Error:    nil,
 	}
 
 }
 
 func (c *MainController) Onerequest() {
-	subRequestListJson := c.GetString("subRequestList", "[]")
+	status := "SUCCESS"
 	var subRequestList []SubRequest
 	var subResponseList []SubResponse
+	sessionId := c.Ctx.Input.Header(beego.BConfig.WebConfig.Session.SessionNameInHTTPHeader)
+
+	subRequestListJson := c.GetString("subRequestList", "[]")
 	err := json.Unmarshal([]byte(subRequestListJson), &subRequestList)
-	status := "SUCCESS"
 	if err != nil {
-		status = "ERROR"
+		status = "ERROR_PARSE_PARAMS"
 	} else {
 		for _, subRequest := range subRequestList {
 			subResponseList = append(subResponseList, c.processSubRequest(subRequest))
 		}
 	}
-	c.Data["json"] = &map[string]interface{}{"subResponseList": subResponseList, "status": status}
+
+	c.Data["json"] = &map[string]interface{}{"subResponseList": subResponseList, "status": status, "sessionId": sessionId}
 	c.ServeJSON()
 }
 func init() {
