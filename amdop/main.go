@@ -7,6 +7,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"github.com/beego/admin/src/models"
+	_ "onerequest"
 	"time"
 )
 

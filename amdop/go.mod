@@ -8,6 +8,9 @@ require (
 	github.com/liudng/godump v0.0.0-20150708094948-5c7e73aafb21
 	github.com/smartystreets/goconvey v1.6.4
 	github.com/syyongx/php2go v0.9.4
+	onerequest v0.0.0-00010101000000-000000000000
 )
 
 replace github.com/beego/admin => ../localpkg/admin
+
+replace onerequest => ../localpkg/onerequest
