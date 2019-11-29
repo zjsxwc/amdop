@@ -98,6 +98,7 @@ func (c *MainController) Onerequest() {
 	c.Data["json"] = &map[string]interface{}{"subResponseList": subResponseList, "status": status, "sessionId": sessionId}
 	c.ServeJSON()
 }
+
 func init() {
 	beego.Router("/onerequest", &MainController{}, "post:Onerequest")
 }
