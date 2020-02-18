@@ -44,7 +44,7 @@ CREATE DATABASE IF NOT EXISTS amdop DEFAULT CHARSET utf8mb4 COLLATE utf8mb4_unic
 ```bash
 wangchao@wangchao-PC:~/go/src/amdop/src$ pwd
 /home/wangchao/go/src/amdop/src
-wangchao@wangchao-PC:~/go/src/amdop/src$ ./src  -syncdb
+wangchao@wangchao-PC:~/go/src/amdop/src$ ./src  -initdb
 ```
 
 5. 运行看看

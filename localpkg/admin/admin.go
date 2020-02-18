@@ -33,8 +33,8 @@ func initialize() {
 func initArgs() {
 	args := os.Args
 	for _, v := range args {
-		if v == "-syncdb" {
-			models.Syncdb()
+		if v == "-initdb" {
+			models.Initdb()
 			os.Exit(0)
 		}
 		if v == "-updatedb" {

@@ -23,7 +23,7 @@ see the references of method `deleteRels()` https://github.com/astaxie/beego/blo
 
 #### 如何对数据库表初始化
 
-使用`"-syncdb"`参数进入`models.Syncdb()` beego/admin/admin.go:37
+使用`"-initdb"`参数进入`models.Initdb()` beego/admin/admin.go:37
 
 `createdb()`连接数据库后创建对应名字的数据库
 
@@ -389,7 +389,7 @@ $ go build
 ```
 首次启动需要创建数据库、初始化数据库表。
 ```bash
-$ ./hello -syncdb
+$ ./hello -initdb
 ```
 好了，现在可以通过浏览器地址访问了[`http://localhost:8080/`](http://localhost:8080/)
 

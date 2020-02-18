@@ -16,7 +16,7 @@ import (
 
 var o orm.Ormer
 
-func Syncdb() {
+func Initdb() {
 	createdb()
 	Connect()
 	o = orm.NewOrm()

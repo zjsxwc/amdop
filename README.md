@@ -5,7 +5,8 @@ cd ~/amdop/amdop
 GO111MODULE=on GOPROXY=https://goproxy.io  go mod tidy
 GO111MODULE=on go build
 
-./amdop -syncdb
+./amdop -initdb
+./amdop -updatedb
 ./amdop
 
 

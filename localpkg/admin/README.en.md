@@ -107,7 +107,7 @@ $ go build
 First start you need to create a database, initialize the database tables.
 
 ```bash
-$ ./hello -syncdb
+$ ./hello -initdb
 ```
 Well, now you can access through the browser address `http://localhost:8080/`
 

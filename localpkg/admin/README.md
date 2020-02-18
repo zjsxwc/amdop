@@ -106,7 +106,7 @@ $ go build
 ```
 首次启动需要创建数据库、初始化数据库表。
 ```bash
-$ ./hello -syncdb
+$ ./hello -initdb
 ```
 好了，现在可以通过浏览器地址访问了[`http://localhost:8080/`](http://localhost:8080/)
 
