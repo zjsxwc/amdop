@@ -39,6 +39,26 @@ func Syncdb() {
 
 }
 
+func Updatedb() {
+	createdb()
+	Connect()
+	o = orm.NewOrm()
+	// 数据库别名
+	name := "default"
+	// drop table 后再建表
+	force := false
+	// 打印执行过程
+	verbose := true
+	// 遇到错误立即返回
+	err := orm.RunSyncdb(name, force, verbose)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("database schema update is complete.\nPlease restart the application")
+
+}
+
+
 //数据库连接
 func Connect() {
 	var dsn string

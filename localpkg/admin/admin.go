@@ -37,5 +37,9 @@ func initArgs() {
 			models.Syncdb()
 			os.Exit(0)
 		}
+		if v == "-updatedb" {
+			models.Updatedb()
+			os.Exit(0)
+		}
 	}
 }
